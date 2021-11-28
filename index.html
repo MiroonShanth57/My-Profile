@@ -78,9 +78,13 @@
             </section>
 
             <section>
-                <article>
 
-                    <img src="assets/images/g2.jpeg" alt="Error" width="100">
+                <picture>
+                <source srcset="assets/images/g4.jpg" media="(max-with:400px)">
+                <img alt="Error" src="assets/images/g2.jpeg" width="300">
+                </picture>
+
+                <article>
                     <figure>
                         <blockquote>
                             <p>
@@ -117,7 +121,10 @@
                 <h4>Education</h4>
             </section>
 
-            <section></section>
+            <section>
+
+
+            </section>
 
         </section>
 
@@ -139,7 +146,20 @@
         </section>
 
         <section>
+            <fieldset>
+                <legend>Do you have any questions or any tips for me ?</legend>
 
+                <label for="name">Name</label>
+                <input id="name" type="Name" placeholder="Name"><br><br><br>
+
+                <label for="Email">Email</label>
+                <input id="Email" type="Email" placeholder="Email"><br><br><br>
+
+                <label for="message">Drop Your Message</label>
+                <textarea id="message" datatype="" placeholder="Drop Your Message"></textarea>
+                <button>Submit</button>
+
+            </fieldset>
         </section>
     </footer>
 
