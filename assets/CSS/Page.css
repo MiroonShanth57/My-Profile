@@ -860,3 +860,196 @@ main>section:nth-child(4)>section>div>label:hover{
 /*..................................Project PAGE CSS PART ENDING..............................*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+
+/*............................Education PAGE CSS PART STARTING...............................*/
+
+main>section:nth-child(5){
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SansSerif;
+
+}
+
+.container3{
+    width: 97%;
+    text-align: center;
+    background-color: #eac9c4;
+}
+
+main>section:nth-child(5)>section>h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 63px 0px;
+}
+
+main>section:nth-child(5)>section>h1:before {
+    content: '';
+    position: absolute;
+    font-size: 11px;
+    width: 100px;
+    height: 2px;
+    background-color: #ff0000;
+    bottom: -5px;
+    left: 47%;
+    transform: translateX(-53px);
+    animation: Education 8s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    transition-delay: 2s;
+    font-family: fantasy;
+}
+
+@keyframes Education {
+    0%{
+        width: 100px;
+    }50%{
+         width: 200px;
+     }100%{
+          width: 100px;
+      }
+
+}
+
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: #494141;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.timeline ul li:last-child{
+    margin-bottom: 15px;
+}
+
+.timeline-content h1{
+    font-size: 25px;
+    font-weight: bolder;
+
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+
+/*..................................Education PAGE CSS PART ENDING..............................*/
+/*=========================================================================================*/
+/*=========================================================================================*/
+
+footer{
+    background: url("../images/background.jpg");
+
+    width: 99%;
+    height: 137px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SansSerif;
+}
+
+footer>section:nth-child(1){
+
+    width: 97%;
+    text-align: center;
+}
+
+footer>section:nth-child(1)>h4{
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 30px 0px;
+    color: white;
+}
+
+footer>section:nth-child(1)>h4:before{
+    content: '';
+    position: absolute;
+    font-size: 11px;
+    width: 100px;
+    height: 2px;
+    background-color: #ff0000;
+    bottom: -5px;
+    left: 47%;
+    transform: translateX(-53px);
+    animation: Contact 8s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    transition-delay: 2s;
+    font-family: fantasy;
+}
+@keyframes Contact {
+    0%{
+        width: 100px;
+    }50%{
+         width: 200px;
+     }100%{
+          width: 100px;
+      }
+
+}
+
+
+.inner-footer{
+    margin: 0;
+    padding: 0;
+
+}
+
+.social-link ul{
+
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+
+    margin: auto;
+
+    left: 0;
+    right: 0;
+}
+
+.social-link{
+    display: flex;
+    height: 70px;
+    padding-right: 0px;
+    width: 1200px;
+}
+
+.social-item{
+    list-style: none;
+}
+
+.social-item a {
+    padding: 16px 28px 0px 48px;
+    font-size: 40px;
+    color: red;
+
+    transition: all 0.25s;
+}
+
+.social-item a:hover{
+    color: white;
+}
+
+.outer-footer{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background: red;
+}
