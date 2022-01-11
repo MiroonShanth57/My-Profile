@@ -618,3 +618,245 @@ div>div>div>img:after{
 /*..................................Skills PAGE CSS PART ENDING..............................*/
 /*=========================================================================================*/
 /*=========================================================================================*/
+/*............................Project PAGE CSS PART STARTING...............................*/
+
+main>section:nth-child(4){
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SansSerif;
+
+}
+
+.input{
+    display: none;
+
+}
+
+.container2{
+    width: 97%;
+    text-align: center;
+}
+
+
+main>section:nth-child(4)>section>h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: normal;
+
+    margin: 40px 0;
+}
+
+main>section:nth-child(4)>section>h1:before{
+    content: 'I have completed 30+ assignments in the semester';
+    position: absolute;
+    font-size: 11px;
+    width: 100px;
+    height: 1px;
+    background-color: #ff0000;
+    bottom: -5px;
+    left: 47%;
+    transform: translateX(-53px);
+    animation: Projects 8s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    transition-delay: 2s;
+    font-family: fantasy;
+}
+
+@keyframes Projects {
+    0%{
+        width: 100px;
+    }50%{
+         width: 200px;
+     }100%{
+          width: 100px;
+      }
+
+}
+
+.top-content{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto 20px auto;
+
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+    box-shadow: 5px 8px 7px #403a39;
+}
+
+main>section:nth-child(4)>section>div>h3{
+    height: 100%;
+    background-color: #3c2323;;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+
+main>section:nth-child(4)>section>div>label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 5px;
+    margin: 0 13px;
+    line-height: 60px;
+
+    font-size: 18px;
+    color: gray;
+
+    cursor: pointer;
+
+    transition: color 0.5s;
+}
+
+main>section:nth-child(4)>section>div>label:hover{
+    color: #f50000;
+    font-weight: bold;
+
+}
+.My-Projects{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.ProjectsClass img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+.ProjectsClass {
+    position: relative;
+    height: 301px;
+    border-radius: 5px;
+    box-shadow: 6px -3px 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.ProjectsClass::before{
+    content: 'View';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    font-family: "Lucida Sans";
+
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+
+    z-index: 1;
+}
+
+.ProjectsClass::after{
+    content: '';
+    text-align: center;
+    color: #ffffff;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0%;
+    background-color: rgba(0,-0,0,0.4);
+
+    transition: 0.3s;
+
+}
+
+.ProjectsClass:hover::after{
+    height: 200px;
+}
+
+.ProjectsClass:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+#Pr1:checked ~ .container2 .My-Projects .ProjectsClass{
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#Pr2:checked ~ .container2 .My-Projects .Java {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Pr2:checked ~ .container2 .My-Projects .JavaFX,
+#Pr2:checked ~ .container .My-Projects .MySQL,
+#Pr2:checked ~ .container .My-Projects .CSS{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#Pr3:checked ~ .container2 .My-Projects .JavaFX {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Pr3:checked ~ .container2 .My-Projects .MySQL,
+#Pr3:checked ~ .container2 .My-Projects .CSS,
+#Pr3:checked ~ .container2 .My-Projects .Java{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#Pr4:checked ~ .container2 .My-Projects .MySQL {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Pr4:checked ~ .container2 .My-Projects .CSS,
+#Pr4:checked ~ .container2 .My-Projects .Java,
+#Pr4:checked ~ .container2 .My-Projects .JavaFX{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#Pr5:checked ~ .container2 .My-Projects .CSS {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Pr5:checked ~ .container2 .My-Projects .Java,
+#Pr5:checked ~ .container2 .My-Projects .JavaFX,
+#Pr5:checked ~ .container2 .My-Projects .MySQL{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+
+/*..................................Project PAGE CSS PART ENDING..............................*/
+/*=========================================================================================*/
+/*=========================================================================================*/
