@@ -188,12 +188,6 @@ main>section>section:nth-child(2)>dl{
     margin: auto
 }
 
-/*main>section>section:nth-child(2)>dl>dt{*/
-/*    color: white;*/
-/*    text-transform: inherit;*/
-
-/*    margin: 10px 5px;*/
-/*}*/
 
 main>section>section:nth-child(2)>dl>ul>li{
     color: white;
@@ -236,84 +230,18 @@ main>section>section:nth-child(2)>dl>ul>li{
 /*=========================================================================================*/
 /*............................GALLERY PAGE CSS PART STARTING...............................*/
 
-/*body>main>section:nth-child(2){*/
-/*    !*border:2px solid red;*!*/
-
-/*    width: 100%;*/
-/*    height: 25%;*/
-
-/*    position: relative;*/
-/*    background: #ffffff;*/
-/*    !*background-image: linear-gradient(rgba(0,0,0,-0.25),rgba(0,0,0,0.75)),*!*/
-/*    !*url("../images/background.jpg");*!*/
-/*}*/
-
-/*body>main>section:nth-child(2)>section:nth-child(1){*/
-/*    background: #ffffff;*/
-/*    width: 100%;*/
-/*    height: 51px;*/
-/*    position: sticky;*/
-/*    padding: 36px 0px 15px 0px;*/
-/*}*/
-
-
-/*body>main>section:nth-child(2)>section:nth-child(1)>h4{*/
-/*    font-family: "Nirmala UI", SansSerif;*/
-/*    color: black;*/
-
-/*    font-size: 40px;*/
-/*    text-align: center;*/
-
-/*    margin-bottom: 60px;*/
-/*    padding-bottom: 20px;*/
-
-/*    position: relative;*/
-
-/*}*/
-
-/*!*body>main>section:nth-child(2)>section:nth-child(1)>h4 ::before{*!*/
-/*!*    content: '';*!*/
-/*!*    position: absolute;*!*/
-/*!*    bottom: 0px;*!*/
-/*!*    width: 180px;*!*/
-/*!*    height: 3px;*!*/
-
-/*!*    background: black;*!*/
-/*!*    left: 50%;*!*/
-
-/*!*    transform: translateX(-50%);*!*/
-
-/*!*}*!*/
-
-/*!*body>main>section:nth-child(2)>section:nth-child(1)>h4 ::after{*!*/
-/*!*    content: '';*!*/
-/*!*    position: absolute;*!*/
-/*!*    bottom: -7px;*!*/
-/*!*    width: 180px;*!*/
-/*!*    height: 3px;*!*/
-
-/*!*    background: #ffffff;*!*/
-/*!*    left: 50%;*!*/
-
-/*!*    transform: translateX(-50%);*!*/
-
-/*!*}*!*/
-
-
-
-/*body>main>section:nth-child(2)>section:nth-child(2){*/
-/*    padding-top: 60px;*/
-/*}*/
 
 main>section:nth-child(2){
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: SansSerif;
+
 }
 
 .input{
     display: none;
+
 }
 
 .container{
@@ -365,12 +293,12 @@ main>section:nth-child(2)>section>h1:before{
     align-items: center;
 
     border-radius: 8px;
-    box-shadow: 5px 5px 5px salmon;
+    box-shadow: 5px 8px 7px #403a39;
 }
 
 main>section:nth-child(2)>section>div>h3{
     height: 100%;
-    background-color: #ff0000;
+    background-color: #3c2323;;
     line-height: 60px;
     padding: 0 50px;
     color: white;
@@ -392,7 +320,9 @@ main>section:nth-child(2)>section>div>label{
 }
 
 main>section:nth-child(2)>section>div>label:hover{
-    color: #000000;
+    color: #f50000;
+    font-weight: bold;
+
 }
 .Photo-Gallery{
     width: 90%;
@@ -412,13 +342,13 @@ main>section:nth-child(2)>section>div>label:hover{
     transition: 0.5s;
 }
 
-.Pic{
+.Pic {
     position: relative;
-    height: 230px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px red;
-
+    height: 301px;
+    border-radius: 5px;
+    box-shadow: 6px -3px 10px black;
     cursor: pointer;
+    transition: .5s;
 }
 
 .Pic::before{
@@ -427,11 +357,12 @@ main>section:nth-child(2)>section>div>label:hover{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50px);
-    color: #000000;
+    color: #ffffff;
 
     font-size: 20px;
     font-weight: bold;
     width: 100%;
+    font-family: "Lucida Sans";
 
     margin-top: -100px;
     opacity: 0;
@@ -443,13 +374,16 @@ main>section:nth-child(2)>section>div>label:hover{
 
 .Pic::after{
     content: '';
+    text-align: center;
+    color: #ffffff;
+
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     border-radius: 10px;
     height: 0%;
-    background-color: #d55959;
+    background-color: rgba(0,-0,0,0.4);
 
     transition: 0.3s;
 
@@ -459,39 +393,74 @@ main>section:nth-child(2)>section>div>label:hover{
     height: 200px;
 }
 
-.pic:hover::before{
+.Pic:hover::before{
 margin-top: 0;
     opacity: 1;
 }
 
-#P1:checked~.container.Photo-Gallery.pic{
+#P1:checked ~ .container .Photo-Gallery .Pic{
     opacity:1;
     transform: scale(1);
     position: relative;
-    transition: 0.5s;
+    transition: .5s;
 }
 
-#P2:checked~.container.Photo-Gallery.Mine{
+#P2:checked ~ .container .Photo-Gallery .Mine {
     opacity:1;
     transform: scale(1);
     position: relative;
-    transition: 0.5s;
 }
-#P3:checked~.container.Photo-Gallery.Projects{
-    opacity:1;
-    transform: scale(1);
-    position: relative;
-    transition: 0.5s;
+
+#P2:checked ~ .container .Photo-Gallery .Projects,
+#P2:checked ~ .container .Photo-Gallery .University,
+#P2:checked ~ .container .Photo-Gallery .Visiting{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
 }
-#P4:checked~.container.Photo-Gallery.University{
+
+#P3:checked ~ .container .Photo-Gallery .Projects {
     opacity:1;
     transform: scale(1);
     position: relative;
-    transition: 0.5s;
 }
-#P4:checked~.container.Photo-Gallery.Visiting Places{
+
+#P3:checked ~ .container .Photo-Gallery .Mine,
+#P3:checked ~ .container .Photo-Gallery .University,
+#P3:checked ~ .container .Photo-Gallery .Visiting{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#P4:checked ~ .container .Photo-Gallery .University {
     opacity:1;
     transform: scale(1);
     position: relative;
-    transition: 0.5s;
+}
+
+#P4:checked ~ .container .Photo-Gallery .Mine,
+#P4:checked ~ .container .Photo-Gallery .Projects,
+#P4:checked ~ .container .Photo-Gallery .Visiting{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#P5:checked ~ .container .Photo-Gallery .Visiting {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#P5:checked ~ .container .Photo-Gallery .Mine,
+#P5:checked ~ .container .Photo-Gallery .Projects,
+#P5:checked ~ .container .Photo-Gallery .University{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
 }
