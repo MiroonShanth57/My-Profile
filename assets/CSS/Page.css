@@ -149,11 +149,11 @@ header>nav>img{
 
     main>section:nth-child(1)>section>div>button{
         position: relative;
-        width: 96px;
-        padding: 13px 6px;
-        border-radius: 10px;
+        width: 150px;
+        padding: 17px 0px;
+        border-radius: 8px;
         text-align: center;
-        margin: 17px 10px;
+        margin: 27px 25px;
         font-weight: bold;
         border: 2px solid #ff0000;
         background: transparent;
@@ -161,9 +161,10 @@ header>nav>img{
         cursor: pointer;
         text-transform: uppercase;
         overflow: hidden;
-        left: -8px;
-        font-size: 11px;
+        left: 5px;
+        font-size: 13px;
     }
+
 
 }
 
@@ -291,9 +292,8 @@ main>section>section:nth-child(2)>dl>ul>li{
     text-align: center;
     font-size: 15px;
     padding: 13px 10px;
-    margin: 20px 1px;
+    margin: -156px 1px;
     line-height: 26px;
-
     font-family: "Sitka Small";
 }
 
@@ -744,7 +744,7 @@ main>section:nth-child(4)>section>h1{
 }
 
 main>section:nth-child(4)>section>h1:before{
-    content: 'I have completed 30+ assignments in the semester';
+    content: 'I have completed 10+ Projects in the semester';
     position: absolute;
     font-size: 11px;
     width: 100px;
@@ -957,9 +957,271 @@ main>section:nth-child(4)>section>div>label:hover{
 /*=========================================================================================*/
 /*=========================================================================================*/
 
-/*............................Education PAGE CSS PART STARTING...............................*/
+/*..................................Assignments PAGE CSS PART ENDING..............................*/
+/*=========================================================================================*/
+/*=========================================================================================*/
 
 main>section:nth-child(5){
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: SansSerif;
+
+}
+
+.input{
+    display: none;
+
+}
+
+.container4{
+    width: 97%;
+    text-align: center;
+}
+
+
+main>section:nth-child(5)>section>h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: normal;
+
+    margin: 40px 0;
+}
+
+main>section:nth-child(5)>section>h1:before{
+    content: 'I have completed 30+ assignments in the semester';
+    position: absolute;
+    font-size: 11px;
+    width: 100px;
+    height: 1px;
+    background-color: #ff0000;
+    bottom: -5px;
+    left: 47%;
+    transform: translateX(-53px);
+    animation: Assignment 8s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    transition-delay: 2s;
+    font-family: fantasy;
+}
+
+@keyframes Assignment {
+    0%{
+        width: 100px;
+    }50%{
+         width: 200px;
+     }100%{
+          width: 100px;
+      }
+
+}
+
+.top-content{
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto 20px auto;
+
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+    box-shadow: 5px 8px 7px #403a39;
+}
+
+main>section:nth-child(5)>section>div>h3{
+    height: 100%;
+    background-color: #3c2323;;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+
+main>section:nth-child(5)>section>div>label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 5px;
+    margin: 0 13px;
+    line-height: 60px;
+
+    font-size: 18px;
+    color: gray;
+
+    cursor: pointer;
+
+    transition: color 0.5s;
+}
+
+main>section:nth-child(5)>section>div>label:hover{
+    color: #f50000;
+    font-weight: bold;
+
+}
+.Assignments{
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.AssignmentsClass img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+.AssignmentsClass {
+    position: relative;
+    height: 301px;
+    border-radius: 5px;
+    box-shadow: 6px -3px 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.AssignmentsClass::before{
+    content: 'View';
+    position: absolute;
+    top: 75%;
+    left: 53%;
+    transform: translate(-50%, -50px);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    font-family: "Lucida Sans";
+    margin-top: -92px;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    z-index: 1;
+}
+
+#place::after{
+    content: 'This is not for View';
+}
+#place::before{
+    content: '';
+}
+
+#anim1::after{
+    content: 'Basic Rotation With Animation';
+}
+#anim2::after{
+    content: 'Water Drop Animation';
+
+}
+#anim3::after{
+    content: 'Slider Animation';
+}
+#anim4::after{
+     content: 'Car Animation';
+}
+
+#La1::after{
+    content: 'Case 1';
+}
+#La2::after{
+    content: 'Case 2';
+}
+#La3::after{
+    content: 'Case 3';
+}
+#La4::after{
+    content: 'Case 4';
+}
+
+#Tr1::after{
+    content: 'Navigation';
+}
+#Tr2::after{
+    content: 'Cricle Border';
+}
+
+.AssignmentsClass::after{
+
+    text-align: -webkit-center;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    left: 2px;
+    border-radius: 10px;
+    height: 11%;
+    background-color: rgba(10,-0,0,0.6);
+    transition: 0.3s;
+    font-size: 22px;
+    font-family: ui-monospace;
+
+}
+
+.AssignmentsClass:hover::after{
+    height: 200px;
+}
+
+.AssignmentsClass:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+#Ass1:checked ~ .container4 .Assignments .AssignmentsClass{
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#Ass2:checked ~ .container4 .Assignments .Animations {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Ass2:checked ~ .container4 .Assignments .Layouts,
+#Ass2:checked ~ .container4 .Assignments .Transitions {
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#Ass3:checked ~ .container4 .Assignments .Layouts {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Ass3:checked ~ .container4 .Assignments .Transitions,
+#Ass3:checked ~ .container4 .Assignments .Animations{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#Ass4:checked ~ .container4 .Assignments .Transitions {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Ass4:checked ~ .container4 .Assignments .Animations,
+#Ass4:checked ~ .container4 .Assignments .Layouts{
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+/*............................Assignments PAGE CSS PART STARTING...............................*/
+
+/*............................Education PAGE CSS PART STARTING...............................*/
+
+main>section:nth-child(6){
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -973,14 +1235,14 @@ main>section:nth-child(5){
     background-color: #eac9c4;
 }
 
-main>section:nth-child(5)>section>h1{
+main>section:nth-child(6)>section>h1{
     position: relative;
     font-size: 35px;
     font-weight: normal;
     margin: 63px 0px;
 }
 
-main>section:nth-child(5)>section>h1:before {
+main>section:nth-child(6)>section>h1:before {
     content: '';
     position: absolute;
     font-size: 11px;
