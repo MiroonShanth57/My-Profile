@@ -1,0 +1,107 @@
+
+/*1*/
+body>section{
+    height: 100vh;
+    position: relative;
+}
+
+/*2*/
+
+section > div {
+    width: 325px;
+    height: 325px;
+
+    border-radius: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    margin: auto;
+    text-align: center;
+
+
+}
+
+/*3*/
+body>section:nth-child(3)>div{
+    top: 3%;
+    background-color: rgb(206, 57, 57);
+}
+
+body > section:nth-child(1) > div {
+    bottom: 2%;
+    background-color: rgb(164, 65, 198);
+}
+
+body > section:nth-child(2) > div {
+    bottom: 40%;
+
+    background-color: rgb(10, 100, 144);
+}
+
+/*4*/
+
+section > div > p:nth-child(3) {
+    border: 0;
+    top: 60%;
+}
+
+section > div > p {
+    position: relative;
+
+    top: 45%;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    font-size: 30px;
+    font-family: "Franklin Gothic Demi";
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+    /*5*/
+
+body > div:nth-of-type(1) {
+    width: 330px;
+    height: 330px;
+    border-radius: 100%;
+
+    border: 25px solid #95a5a6;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+
+}
+
+body > div:nth-of-type(2) {
+    width: 375px;
+    height: 375px;
+    border-radius: 100%;
+
+    border: 25px solid red;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+
+

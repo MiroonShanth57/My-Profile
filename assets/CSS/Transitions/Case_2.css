@@ -1,0 +1,55 @@
+
+body>section{
+    height: 300px;
+    width: 300px;
+
+    border: 17px solid #261111;
+    border-radius: 100%;
+
+    border-top: 17px solid #f30202;
+
+
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: #778be2;
+}
+
+body>section>h1{
+    position: absolute;
+
+    font-size: 100px;
+    /*text-align: center;*/
+    width: max-content;
+    height: max-content;
+
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    color: #0447ff;
+    font-family: "Gloucester MT Extra Condensed";
+}
+
+body>section:hover h1{
+    transform: rotate(-360deg);
+    transition: all 3s;
+}
+
+body>section:hover{
+    cursor: pointer;
+
+    transform: rotate(360deg);
+    transition: all 3s;
+}
+
+body{
+    background-color: #e89c9c;
+}
+
