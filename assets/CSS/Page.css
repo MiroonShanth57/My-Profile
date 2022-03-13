@@ -1141,6 +1141,9 @@ main>section:nth-child(5)>section>div>label:hover{
 #Tr2::after{
     content: 'Cricle Border';
 }
+#pos1::after{
+    content: 'POS System';
+}
 
 .AssignmentsClass::after{
 
@@ -1182,7 +1185,8 @@ main>section:nth-child(5)>section>div>label:hover{
 }
 
 #Ass2:checked ~ .container4 .Assignments .Layouts,
-#Ass2:checked ~ .container4 .Assignments .Transitions {
+#Ass2:checked ~ .container4 .Assignments .Transitions,
+#Ass5:checked ~ .container4 .Assignments .JavaScript{
     opacity:0;
     transform: scale(0);
     position: absolute;
@@ -1196,6 +1200,7 @@ main>section:nth-child(5)>section>div>label:hover{
 }
 
 #Ass3:checked ~ .container4 .Assignments .Transitions,
+#Ass5:checked ~ .container4 .Assignments .JavaScript,
 #Ass3:checked ~ .container4 .Assignments .Animations{
     opacity:0;
     transform: scale(0);
@@ -1209,6 +1214,7 @@ main>section:nth-child(5)>section>div>label:hover{
     position: relative;
 }
 
+#Ass5:checked ~ .container4 .Assignments .JavaScript,
 #Ass4:checked ~ .container4 .Assignments .Animations,
 #Ass4:checked ~ .container4 .Assignments .Layouts{
     opacity:0;
@@ -1217,7 +1223,23 @@ main>section:nth-child(5)>section>div>label:hover{
     transition: .5s;
 }
 
-/*............................Assignments PAGE CSS PART STARTING...............................*/
+#Ass5:checked ~ .container4 .Assignments .JavaScript {
+    opacity:1;
+    transform: scale(1);
+    position: relative;
+}
+
+#Ass5:checked ~ .container4 .Assignments .Animations,
+#Ass5:checked ~ .container4 .Assignments .Layouts,
+#Ass4:checked ~ .container4 .Assignments .Transitions {
+    opacity:0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+
+/*............................Assignments PAGE CSS PART ending...............................*/
 
 /*............................Education PAGE CSS PART STARTING...............................*/
 
