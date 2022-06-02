@@ -6,6 +6,24 @@
     font-family: sans-serif;
 }
 
+#Loader_Container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #000000;
+
+}
+
+#Loader_Container>img{
+    width: 700px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
 /*==============================Navigation bar CSS=========================================*/
 
 body>header{

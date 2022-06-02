@@ -17,9 +17,18 @@
 
 
     <link rel="stylesheet" href="assets/CSS/Page.css">
+
+    <style>
+
+
+    </style>
 </head>
     <link rel="stylesheet" href="assets/CSS/fontawesome/css/all.css">
 <body>
+    <div id="Loader_Container">
+        <img src="assets/images/gif/loader.gif" alt="">
+    </div>
+
 
     <header>
 
@@ -520,6 +529,21 @@
 <!--        </section>-->
     </footer>
 
+    <script src="assets/JQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            console.log("Window Loaded");
+            $("#Loader_Container").fadeOut(1000);
+        });
 
+
+        // $(document).ready(function () {
+        //     console.log("Document Ready");
+        // });
+        //
+        // $(function () {
+        //     console.log("Document Loaded");
+        // });
+    </script>
 </body>
 </html>
